@@ -3,11 +3,11 @@
 // Date created:         Fri Feb 23 13:14:47 GMT 2018
 
 xlr {
-  release('AutoRelease-GenerateTasks-R12345') {
+  release('AutoRelease-GenerateTasks-R34384') {
     variables {
       mapVariable('components') {
         showOnReleaseStart false
-        value 'component2':'1.3.1','component3':'1.1.1','component1':'1.0.1'
+        value 'component2':'1.6.1','component3':'1.2.1','component1':'1.0.1'
       }
       booleanVariable('isManual') {
         
