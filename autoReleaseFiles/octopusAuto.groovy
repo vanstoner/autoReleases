@@ -1,6 +1,6 @@
 // Exported from:        http://Robs-Pro.local:5516/#/templates/Folder43fbe2f960104407ac113711e83ba31b-Release553d70dc510b4382b96e039dab4399dc/releasefile
 // XL Release version:   7.5.0
-// Date created:         Fri Feb 23 13:02:19 GMT 2018
+// Date created:         Fri Feb 23 13:14:47 GMT 2018
 
 xlr {
   release('AutoRelease-GenerateTasks') {
@@ -14,6 +14,9 @@ xlr {
       }
     }
     scheduledStartDate Date.parse("yyyy-MM-dd'T'HH:mm:ssZ", '2018-02-08T09:00:00+0000')
+    tags 'autoRelease'
+    scriptUsername 'admin'
+    scriptUserPassword '{b64}/fmIVfOrU2FWrBY55tD9eg=='
     // no DSL renderer found for property 'riskProfile' of type 'xlrelease.Release'
     phases {
       phase('DEV') {
