@@ -1,6 +1,6 @@
-// Exported from:        http://Robs-Pro.local:5516/#/templates/Folder43fbe2f960104407ac113711e83ba31b-Release553d70dc510b4382b96e039dab4399dc/releasefile
+// Exported from:        http://Robs-Pro.local:5516/#/templates/Folder5189c55f4221489b97f0726b15373b34-Release553d70dc510b4382b96e039dab4399dc/releasefile
 // XL Release version:   7.5.0
-// Date created:         Fri Feb 23 13:14:47 GMT 2018
+// Date created:         Fri Feb 23 15:46:08 GMT 2018
 
 xlr {
   release('AutoRelease-GenerateTasks') {
@@ -14,8 +14,8 @@ xlr {
       }
     }
     scheduledStartDate Date.parse("yyyy-MM-dd'T'HH:mm:ssZ", '2018-02-08T09:00:00+0000')
-    autoStart 'true'
     tags 'autoRelease'
+    autoStart 'true'
     scriptUsername 'admin'
     scriptUserPassword '{b64}/fmIVfOrU2FWrBY55tD9eg=='
     // no DSL renderer found for property 'riskProfile' of type 'xlrelease.Release'
@@ -33,14 +33,14 @@ xlr {
           }
           script('Add tasks to this release') {
             script 'deployComponents = releaseVariables[\'components\']\n' +
-                   'containerTask = taskApi.searchTasksByTitle(\'OctopusDeploy\',None, getCurrentRelease().id)\n' +
+                   'containerTask = taskApi.searchTasksByTitle(\'Deploy\',None, getCurrentRelease().id)\n' +
                    'print (containerTask)\n' +
                    'if containerTask[0].id:\n' +
                    '    print "Found the following task %s" % containerTask[0].id\n' +
                    '    for key, value in deployComponents.iteritems():\n' +
-                   '      task = taskApi.newTask("octopus.DeployRelease")\n' +
+                   '      task = taskApi.newTask("xlrelease.ScriptTask")\n' +
                    '      task.title = "Deploy %s at version %s" % (key,value)\n' +
-                   '      task.pythonScript.environment = "Dev"\n' +
+                   '      task.script = "import time\\ntime.sleep(10)"\n' +
                    '      taskApi.addTask(containerTask[0].id, task)\n' +
                    '    \n' +
                    'print "Done"'
