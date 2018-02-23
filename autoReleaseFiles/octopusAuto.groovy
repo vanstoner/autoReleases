@@ -14,6 +14,7 @@ xlr {
       }
     }
     scheduledStartDate Date.parse("yyyy-MM-dd'T'HH:mm:ssZ", '2018-02-08T09:00:00+0000')
+    autoStart 'true'
     tags 'autoRelease'
     scriptUsername 'admin'
     scriptUserPassword '{b64}/fmIVfOrU2FWrBY55tD9eg=='
