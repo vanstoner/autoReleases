@@ -1,9 +1,9 @@
 xlr {
-  release('AutoRelease-GenerateTasks-1.0.5') {
+  release('AutoRelease-GenerateTasks-1.0.6') {
     variables {
       mapVariable('components') {
         showOnReleaseStart false
-        value 'component2':'1.2.1','component3':'1.1.1','component1':'1.0.1'
+        value 'component2':'1.4.1','component3':'1.1.1','component1':'1.0.1'
       }
       booleanVariable('isManual') {
         
