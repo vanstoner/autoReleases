@@ -1,5 +1,3 @@
-// Date created:         Fri Mar 09 11:17:33 GMT 2018
-
 xlr {
   release('AutoRelease-GenerateTasks-1.0.4') {
     variables {
