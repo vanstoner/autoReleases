@@ -3,7 +3,7 @@
 // Date created:         Fri Feb 23 15:46:08 GMT 2018
 
 xlr {
-  release('AutoRelease-GenerateTasks-1.0.2') {
+  release('AutoRelease-GenerateTasks-1.0.3') {
     variables {
       mapVariable('components') {
         showOnReleaseStart false
