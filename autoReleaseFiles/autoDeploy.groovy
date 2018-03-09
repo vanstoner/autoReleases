@@ -1,5 +1,5 @@
 xlr {
-  release('AutoRelease-GenerateTasks-1.0.4') {
+  release('AutoRelease-GenerateTasks-1.0.5') {
     variables {
       mapVariable('components') {
         showOnReleaseStart false
