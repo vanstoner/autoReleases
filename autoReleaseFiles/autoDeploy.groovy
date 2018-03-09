@@ -17,7 +17,7 @@ xlr {
     tags 'autoRelease'
     autoStart 'true'
     scriptUsername 'admin'
-    scriptUserPassword '{b64}/fmIVfOrU2FWrBY55tD9eg=='
+    scriptUserPassword '{b64}bc4KjBgfVvxUgRxHVWGNVg=='
     // no DSL renderer found for property 'riskProfile' of type 'xlrelease.Release'
     phases {
       phase('DEV') {
