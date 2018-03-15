@@ -3,7 +3,7 @@ xlr {
     variables {
       mapVariable('components') {
         showOnReleaseStart false
-        value 'component2':'1.4.1','component3':'1.1.1','component1':'1.0.1'
+        value 'component2':'1.4.2','component3':'1.1.1','component1':'1.0.1'
       }
       booleanVariable('isManual') {
         
