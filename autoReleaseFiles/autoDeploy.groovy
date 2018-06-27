@@ -12,7 +12,7 @@ xlr {
     scheduledStartDate Date.parse("yyyy-MM-dd'T'HH:mm:ssZ", '2018-02-08T09:00:00+0000')
     tags 'autoRelease'
     scriptUsername 'admin'
-    scriptUserPassword '{b64}bc4KjBgfVvxUgRxHVWGNVg=='
+    scriptUserPassword 'admin'
     autoStart 'true'
     phases {
       phase('DEV') {
